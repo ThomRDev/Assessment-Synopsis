@@ -26,10 +26,8 @@ namespace SynopsisApp.Domain.Repositories.impl
 
                 var dishes = new List<Dish>();
 
-                // Ejecutar el comando de forma asíncrona
                 using (var reader = await command.ExecuteReaderAsync())
                 {
-                    // Leer los resultados de la consulta
                     while (reader.Read())
                     {
                         var dish = new Dish
