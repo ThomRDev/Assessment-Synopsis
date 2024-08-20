@@ -1,0 +1,6 @@
+@SynopsisApp_HostAddress = http://localhost:5027
+
+GET {{SynopsisApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
