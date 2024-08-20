@@ -46,7 +46,6 @@ namespace SynopsisApp.Domain.Repositories.impl
             }
             finally
             {
-                // Asegúrate de cerrar la conexión en el bloque finally
                 await _sqlConnectionWrapper.CloseAsync();
             }
         }
